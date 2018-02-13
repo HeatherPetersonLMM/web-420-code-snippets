@@ -48,7 +48,7 @@ exports.user_token = function(req, res) {
     });
 };
 
-// Login as an existing user in on POST
+// Login as an existing user on POST
 exports.user_login = function(req, res) {
 
     User.getOne(req.body.email, function(err, user) {
